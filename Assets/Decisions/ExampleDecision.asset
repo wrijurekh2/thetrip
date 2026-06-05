@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57dd2c14ad66f2044b804f74d6863672, type: 3}
   m_Name: ExampleDecision
   m_EditorClassIdentifier: Assembly-CSharp::Decision
-  activityOptions: []
+  activityOptions:
+  - writtenDescription: 
+    allImpacts:
+    - person: 0
+      joyGain: 0
