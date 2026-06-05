@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HapinessManager : MonoBehaviour
+public class HappinessManager : MonoBehaviour
 {
     [SerializeField]
     private PersonTag[] allPeopleTags;
