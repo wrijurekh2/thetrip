@@ -4,13 +4,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Decision", menuName = "Decision")]
 public class Decision : ScriptableObject
 {
+    public int totalAllowedSelections;
     public Activity[] activityOptions;
 }
 
 [Serializable]
 public class Activity
 {
-    [TextArea(15,5)]
+    [TextArea(3,20)]
     public string writtenDescription;
     public ActivityImpact[] allImpacts;
 }
@@ -19,5 +20,5 @@ public class Activity
 public class ActivityImpact
 {
     public PersonTag person;
-    public int joyGain;
+    public float joyGain;
 }

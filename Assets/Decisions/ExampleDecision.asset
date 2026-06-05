@@ -16,4 +16,12 @@ MonoBehaviour:
   - writtenDescription: 
     allImpacts:
     - person: 0
-      joyGain: 0
+      joyGain: 1
+    - person: 1
+      joyGain: -1
+  - writtenDescription: 
+    allImpacts:
+    - person: 0
+      joyGain: 1
+    - person: 2
+      joyGain: 5
