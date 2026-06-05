@@ -8,7 +8,7 @@ public class HappinessManager : MonoBehaviour
     private PersonTag[] allPeopleTags;
     private Dictionary<PersonTag, float> joyValues = new Dictionary<PersonTag, float>();
     [SerializeField]
-    private Decision exampleDecision;
+    private Day exampleDay;
 
     private void Awake()
     {
@@ -16,8 +16,8 @@ public class HappinessManager : MonoBehaviour
         {
             joyValues[person] = 0;
         }
-        RegisterActivity(exampleDecision.activityOptions[0]);
-        RegisterActivity(exampleDecision.activityOptions[1]);
+        RegisterActivity(exampleDay.activityOptions[0]);
+        RegisterActivity(exampleDay.activityOptions[1]);
     }
     public void RegisterActivity(Activity activity)
     {

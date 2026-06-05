@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57dd2c14ad66f2044b804f74d6863672, type: 3}
-  m_Name: ExampleDecision
+  m_Name: ExampleDay
   m_EditorClassIdentifier: Assembly-CSharp::Decision
+  totalAllowedSelections: 3
   activityOptions:
   - writtenDescription: 
     allImpacts:

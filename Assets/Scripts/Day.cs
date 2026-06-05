@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Decision", menuName = "Decision")]
-public class Decision : ScriptableObject
+public class Day : ScriptableObject
 {
     public int totalAllowedSelections;
     public Activity[] activityOptions;
