@@ -9,6 +9,8 @@ public class Day : ScriptableObject
     [field: SerializeField]
     public float expectedNetHappinessAtEndOfDay { get; private set; }
     [field: SerializeField]
+    public string dayDisplayTitle { get; private set; }
+    [field: SerializeField]
     public Activity[] activityOptions { get; private set; }
 }
 
