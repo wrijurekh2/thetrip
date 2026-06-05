@@ -46,7 +46,6 @@ public class PersonGraphic : MonoBehaviour
 
     private IEnumerator MoveToNewRadius(float radius, bool instantMove)
     {
-        Debug.Log(radius);
         Vector2 oldPosition = transform.localPosition;
         Vector2 localCenterPosition = transform.parent.InverseTransformPoint(friendshipCircleCenter.position);
         Vector2 normalisedOffsetDirection = offsetDirection.normalized;
@@ -64,12 +63,5 @@ public class PersonGraphic : MonoBehaviour
             stage += Time.deltaTime / animationTime;
         }
         transform.localPosition = targetPosition;
-    }
-
-    private void FixedUpdate()
-    {
-        h += Time.deltaTime * 3;
-        //Debug.Log(h);
-        UpdateHappiness(h, true);
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class HappinessManager : MonoBehaviour
 {
     [SerializeField]
-    private PersonTag[] allPeopleTags;
+    private PersonGraphic[] allPeople;
     private List<PersonData> people = new();
     [SerializeField]
     private Day exampleDay;
@@ -14,10 +14,12 @@ public class HappinessManager : MonoBehaviour
     {
         public float joy = 0;
         public readonly PersonTag tag;
+        public readonly PersonGraphic graphic;
 
-        public PersonData(PersonTag tag)
+        public PersonData(PersonTag tag, PersonGraphic graphic)
         {
             this.tag = tag;
+            this.graphic = graphic;
         }
     }
 
@@ -33,9 +35,9 @@ public class HappinessManager : MonoBehaviour
 
     private void Awake()
     {
-        foreach (var tag in allPeopleTags)
+        foreach (var person in allPeople)
         {
-             people.Add(new PersonData(tag));
+             people.Add(new PersonData(person.personTag, person));
         }
         RegisterActivity(exampleDay.activityOptions[0]);
         RegisterActivity(exampleDay.activityOptions[1]);
@@ -70,7 +72,8 @@ public class HappinessManager : MonoBehaviour
         }
         foreach (var person in people)
         {
-            // TODO: Put update clause for front-end here
+            person.graphic.UpdateHappiness(person.joy);
+            Debug.Log(person.tag.ToString() + person.joy);
         }
     }
 }
