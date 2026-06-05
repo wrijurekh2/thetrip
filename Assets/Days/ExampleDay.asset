@@ -12,17 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57dd2c14ad66f2044b804f74d6863672, type: 3}
   m_Name: ExampleDay
   m_EditorClassIdentifier: Assembly-CSharp::Decision
-  totalAllowedSelections: 3
-  activityOptions:
+  <totalAllowedSelections>k__BackingField: 3
+  <expectedNetHappinessAtEndOfDay>k__BackingField: 3
+  <activityOptions>k__BackingField:
   - writtenDescription: 
     allImpacts:
     - person: 0
       joyGain: 1
     - person: 1
-      joyGain: -1
+      joyGain: 1
   - writtenDescription: 
     allImpacts:
-    - person: 0
-      joyGain: 1
-    - person: 2
-      joyGain: 5
+    - person: 1
+      joyGain: -2

@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HapinessManager
   allPeopleTags: 00000000010000000200000003000000
-  exampleDecision: {fileID: 11400000, guid: 5ecce258de4df80418a9e6b52337ab84, type: 2}
+  exampleDay: {fileID: 11400000, guid: 5ecce258de4df80418a9e6b52337ab84, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

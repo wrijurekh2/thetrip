@@ -4,8 +4,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Decision", menuName = "Decision")]
 public class Day : ScriptableObject
 {
-    public int totalAllowedSelections;
-    public Activity[] activityOptions;
+    [field: SerializeField]
+    public int totalAllowedSelections {  get; private set; }
+    [field: SerializeField]
+    public float expectedNetHappinessAtEndOfDay { get; private set; }
+    [field: SerializeField]
+    public Activity[] activityOptions { get; private set; }
 }
 
 [Serializable]
