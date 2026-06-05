@@ -70,7 +70,6 @@ public class HappinessManager : MonoBehaviour
         }
         foreach (var person in people)
         {
-            Debug.Log("Person: " + person.tag + " Joy: " + person.joy);
             // TODO: Put update clause for front-end here
         }
     }
