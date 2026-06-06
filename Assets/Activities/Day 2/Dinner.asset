@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a46d88970682f6e48b800ee54325af87, type: 3}
+  m_Name: Dinner
+  m_EditorClassIdentifier: Assembly-CSharp::Activity
+  writtenDescription: 'Eat at Le Cinq (a Michelin star restraunt) '
+  writtenThought: Shayden was a bit nevrous but Adnan loved the atmosphere
+  allImpacts:
+  - person: 0
+    joyGain: 0
+  - person: 3
+    joyGain: -1
+  - person: 2
+    joyGain: 0
+  - person: 1
+    joyGain: 1

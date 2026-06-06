@@ -6,21 +6,24 @@ public class HappinessManager : MonoBehaviour
 {
     [SerializeField]
     private PersonGraphic[] allPeople;
-    private List<PersonData> people = new();
+    public List<PersonData> people { get; private set; } = new();
     [SerializeField]
     private Day exampleDay;
 
-    private class PersonData
+    public class PersonData
     {
         public float joy = 0;
         public readonly PersonTag tag;
         public readonly PersonGraphic graphic;
+        public int daysOutsideCircle = 0;
 
         public PersonData(PersonTag tag, PersonGraphic graphic)
         {
             this.tag = tag;
             this.graphic = graphic;
         }
+
+        public bool isOutsideCircle => joy < -0.01f;
     }
 
     private PersonData GetPersonData(PersonTag tag)
@@ -61,6 +64,21 @@ public class HappinessManager : MonoBehaviour
         foreach (var person in people)
         {
             person.joy += adjustmentPerPerson;
+        }
+    }
+
+    public void EndDay()
+    {
+        foreach (var person in people)
+        {
+            if (person.isOutsideCircle)
+            {
+                person.daysOutsideCircle = 0;
+            }
+            else
+            {
+                person.daysOutsideCircle++;
+            }
         }
     }
 

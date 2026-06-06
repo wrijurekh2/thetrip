@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ExampleActivity
   m_EditorClassIdentifier: Assembly-CSharp::Activity
   writtenDescription: 
+  writtenThought: 
   allImpacts:
   - person: 0
     joyGain: 1
