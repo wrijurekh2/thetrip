@@ -14,6 +14,7 @@ public class GameStateMachine : MonoBehaviour
     private float startDayDelay;
     [SerializeField]
     private SpriteRenderer backgroundImage;
+    [SerializeField] private AudioManager _audioManager;
     public GameState currentState { get; private set; } = GameState.StartDay;
     private int currentDayIndex = -1;
     private ScoringSystem scoringSystem;
@@ -78,6 +79,7 @@ public class GameStateMachine : MonoBehaviour
         currentDayIndex++;
         currentState = GameState.StartDay;
         this.backgroundImage.sprite = currentDay.backgroundImage;
+        this._audioManager.PlayBackgroundMusic(currentDay.backgroundMusic);
         happinessManager.StartDay(currentDay);
         StartCoroutine(StartDayRoutine());
     }   
