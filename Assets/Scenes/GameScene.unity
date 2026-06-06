@@ -1344,6 +1344,10 @@ PrefabInstance:
       value: Info button
       objectReference: {fileID: 0}
     - target: {fileID: 5808023751932480525, guid: 3bec28e257326e24ea82e5b28f2274e6, type: 3}
+      propertyPath: clickSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a8460d0273988a49a09463dae4b6fcb, type: 3}
+    - target: {fileID: 5808023751932480525, guid: 3bec28e257326e24ea82e5b28f2274e6, type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
