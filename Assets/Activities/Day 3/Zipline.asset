@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46d88970682f6e48b800ee54325af87, type: 3}
   m_Name: Zipline
   m_EditorClassIdentifier: Assembly-CSharp::Activity
-  writtenDescription: Go to a zipline
+  writtenDescription: Go on a zipline
   writtenThought: Shayden loved the risk, but Charlie was scared of the heights
   allImpacts:
   - person: 0

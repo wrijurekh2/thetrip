@@ -26,6 +26,14 @@ public class GameStateMachine : MonoBehaviour
         StartNewDay();
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return) && currentState == GameState.Decisions)
+        {
+            DecisionsComplete();
+        }
+    }
+
     public void StartDayComplete()
     {
         if (currentState != GameState.StartDay)
@@ -43,6 +51,7 @@ public class GameStateMachine : MonoBehaviour
         currentState = GameState.Scoring;
         happinessManager.EndDay();
         var scoreCard = scoringSystem.CalculateScoreForDay();
+        notebookManager.SwitchToScoreScreen(scoreCard);
         
     }
 
@@ -68,6 +77,7 @@ public class GameStateMachine : MonoBehaviour
     {
         notebookManager.MoveOffScreen();
         while (notebookManager.isBusy) yield return null;
+        notebookManager.SwitchToDecisionScreen();
         yield return new WaitForSeconds(startDayDelay);
         notebookManager.MoveOnScreen();
         while (notebookManager.isBusy) yield return null;
