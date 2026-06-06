@@ -16,9 +16,9 @@ MonoBehaviour:
   <expectedNetHappinessAtEndOfDay>k__BackingField: 3
   <dayDisplayTitle>k__BackingField: Day 4
   <activityOptions>k__BackingField:
-  - {fileID: 11400000, guid: 4c1c8f57063261f9eab26aac995536bb, type: 2}
-  - {fileID: 11400000, guid: efddf16cb7cdc4c0fa242dea1c25a5eb, type: 2}
-  - {fileID: 11400000, guid: dec5a4ea3d6835bf985b25d4168aff39, type: 2}
-  - {fileID: 11400000, guid: 94b117cfdea261dc88957d5bdd58169f, type: 2}
-  - {fileID: 11400000, guid: ffca80312b04f131f833e540c531ed92, type: 2}
-  - {fileID: 11400000, guid: 29b5098c392351a2d8eb3c296e51b1ef, type: 2}
+  - {fileID: 11400000, guid: b30186bace5d09753bffac0a31b1faf1, type: 2}
+  - {fileID: 11400000, guid: 65be04794a440d8caad3cac62c8e4369, type: 2}
+  - {fileID: 11400000, guid: b29e108faeeee563c8b8ff1578431f6d, type: 2}
+  - {fileID: 11400000, guid: f2ad350a571ae8571a6d7bdd8f0b1038, type: 2}
+  - {fileID: 11400000, guid: f7e7680a6922bda0ba7368e66b36b0b1, type: 2}
+  - {fileID: 11400000, guid: 272adb1007fa62c72999fec6fda3d85b, type: 2}
