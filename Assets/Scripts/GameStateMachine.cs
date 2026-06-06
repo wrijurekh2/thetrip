@@ -69,6 +69,7 @@ public class GameStateMachine : MonoBehaviour
     {
         notebookManager.MoveOffScreen();
         while (notebookManager.isBusy) yield return null;
+        notebookManager.SwitchToDecisionScreen();
         yield return new WaitForSeconds(startDayDelay);
         notebookManager.MoveOnScreen();
         while (notebookManager.isBusy) yield return null;
