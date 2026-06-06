@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a46d88970682f6e48b800ee54325af87, type: 3}
-  m_Name: Dinner
+  m_Name: Pyramids of Giza
   m_EditorClassIdentifier: Assembly-CSharp::Activity
-  writtenDescription: Go eat tapas
-  writtenThought: Alice struggled to sit still, but Adnan loved chatting
+  writtenDescription: Get a tour bus to the Pyramids of Giza
+  writtenThought: 'Charlie loved the Pyramids, but Alice wasn''t a fan of the long
+    bus ride. '
   allImpacts:
   - person: 0
-    joyGain: -1
+    joyGain: -2
   - person: 3
     joyGain: 0
   - person: 2
-    joyGain: 0
+    joyGain: 2
   - person: 1
     joyGain: 1
