@@ -74,7 +74,7 @@ public class GameStateMachine : MonoBehaviour
         this.backgroundImage.sprite = currentDay.backgroundImage;
         happinessManager.StartDay(currentDay);
         StartCoroutine(StartDayRoutine());
-    }
+    }   
 
     private IEnumerator StartDayRoutine()
     {
