@@ -253,6 +253,7 @@ MonoBehaviour:
   onClick:
     m_PersistentCalls:
       m_Calls: []
+  clickSound: {fileID: 0}
 --- !u!1 &3549574808894692885
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,7 +465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8918205050764682486, guid: 20c3231f5434da644919a60ea2c06d71, type: 3}
       propertyPath: offsetDirection.x
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8918205050764682486, guid: 20c3231f5434da644919a60ea2c06d71, type: 3}
       propertyPath: offsetDirection.y
@@ -617,6 +618,10 @@ PrefabInstance:
     - target: {fileID: 6740371574670473215, guid: 20c3231f5434da644919a60ea2c06d71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8918205050764682486, guid: 20c3231f5434da644919a60ea2c06d71, type: 3}
+      propertyPath: offsetDirection.x
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8918205050764682486, guid: 20c3231f5434da644919a60ea2c06d71, type: 3}
       propertyPath: offsetDirection.y
