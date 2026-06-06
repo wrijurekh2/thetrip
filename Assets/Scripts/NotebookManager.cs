@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class NotebookManager : MonoBehaviour
@@ -9,6 +10,14 @@ public class NotebookManager : MonoBehaviour
     private Vector2 onScreenPosition;
     [SerializeField]
     private Vector2 offScreenPosition;
+    [SerializeField]
+    private GameObject scorePage;
+    [SerializeField]
+    private GameObject decisionPage;
+    [SerializeField]
+    private GameObject infoPage;
+    [SerializeField]
+    private TextMeshPro scoreCardTextBox;
     private bool isOnScreen = false;
 
     public bool isBusy {  get; private set; } = false;
@@ -43,5 +52,20 @@ public class NotebookManager : MonoBehaviour
         }
         transform.position = targetPosition;
         isBusy = false;
+    }
+
+    public void SwitchToScoreScreen(string scorecard)
+    {
+        decisionPage.SetActive(false);
+        infoPage.SetActive(false);
+        scorePage.SetActive(true);
+        scoreCardTextBox.text = scorecard;
+    }
+
+    public void SwitchToInfoScreen()
+    {
+        decisionPage.SetActive(false);
+        infoPage.SetActive(false);
+
     }
 }

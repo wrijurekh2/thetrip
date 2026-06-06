@@ -20,8 +20,6 @@ public class PersonGraphic : MonoBehaviour
     [SerializeField]
     private Vector2 offsetDirection;
 
-    private float h = -10;
-
     public void UpdateHappiness(float happiness, bool instantMove = false)
     {
         // Stop previous moves to avoid them clashing

@@ -5,6 +5,6 @@ public class StartButton : MonoBehaviour
 {
     void OnMouseDown()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(1);
     }
 }

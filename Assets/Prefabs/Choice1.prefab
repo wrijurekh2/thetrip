@@ -132,7 +132,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 876648565396903630}
@@ -209,9 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de028bcf562113a49aa9805e61656d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  activity:
-    writtenDescription: 
-    allImpacts: []
+  activity: {fileID: 0}
   controller: {fileID: 0}
 --- !u!61 &4165142086611113247
 BoxCollider2D:
@@ -247,7 +245,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.15118408, y: -0.38638306}
+  m_Offset: {x: -3.8275375, y: 4.8387985}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -257,7 +255,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 299.65637, y: 25.152992}
+  m_Size: {x: 316.68103, y: 50.72769}
   m_EdgeRadius: 0
 --- !u!1 &5983541229197375712
 GameObject:
@@ -286,7 +284,7 @@ RectTransform:
   m_GameObject: {fileID: 5983541229197375712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.5006113, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 876648565396903630}
@@ -351,8 +349,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -390,7 +388,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -199.21944, y: 6.5723, z: -200.31134, w: 8.377403}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
