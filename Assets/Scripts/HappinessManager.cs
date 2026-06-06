@@ -42,11 +42,6 @@ public class HappinessManager : MonoBehaviour
         {
              people.Add(new PersonData(person.personTag, person));
         }
-        
-    }
-
-    private void Start()
-    {
         FindAnyObjectByType<ChoiceListController>().LoadDay(exampleDay);
     }
 
