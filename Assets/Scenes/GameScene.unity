@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec03c52dbde9d59418e4cc2de4b87a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NotebookManager
-  animationDuration: 1
+  animationDuration: 0.7
   onScreenPosition: {x: 0, y: 0}
   offScreenPosition: {x: 0, y: 8}
   scorePage: {fileID: 1331327148}
@@ -282,10 +282,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.28156224
-    y: 0.243346
-    width: 0.43596733
-    height: 0.513308
+    x: 0
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -1201,7 +1201,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 653814422746589197, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1966320545}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8174466452733449684, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
 --- !u!1001 &7440036275866331885
 PrefabInstance:
@@ -1211,6 +1214,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
+      propertyPath: startDayDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
       propertyPath: backgroundImage
       value: 
@@ -1299,10 +1306,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.51
       objectReference: {fileID: 0}
-    - target: {fileID: 1057433744111469269, guid: 3bec28e257326e24ea82e5b28f2274e6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 8894201953851282084, guid: 4114d57cdf209234ca9756405e5df3a6, type: 3}
     - target: {fileID: 2443030975300456537, guid: 3bec28e257326e24ea82e5b28f2274e6, type: 3}
       propertyPath: m_Name
       value: ChoicesPage
@@ -1473,8 +1476,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5625, y: 0.78125}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1.5, y: 0.84375}
+    newSize: {x: 1.5, y: 0.84375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
