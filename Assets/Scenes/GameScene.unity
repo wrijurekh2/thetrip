@@ -745,6 +745,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  clickSound: {fileID: 0}
 --- !u!61 &1966320548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1147,6 +1148,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 364235482}
     m_Modifications:
+    - target: {fileID: 338572933384391403, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
+      propertyPath: m_fontSize
+      value: 3.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 338572933384391403, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338572933384391403, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338572933384391403, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338572933384391403, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 3.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 338572933384391403, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 338572933384391403, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 338572933384391403, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     - target: {fileID: 653814422746589197, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1214,6 +1247,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
+      propertyPath: newDaySound
+      value: 
+      objectReference: {fileID: 8300000, guid: adfd47ab8525abd4e8bc679643ce32e5, type: 3}
+    - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 793070354}
     - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
       propertyPath: _audioManager
       value: 
@@ -1446,6 +1487,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  clickSound: {fileID: 0}
 --- !u!61 &7446923977918931971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1672,6 +1714,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  clickSound: {fileID: 0}
 --- !u!61 &8355736171008229606
 BoxCollider2D:
   m_ObjectHideFlags: 0
