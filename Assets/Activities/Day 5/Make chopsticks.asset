@@ -17,10 +17,10 @@ MonoBehaviour:
     chat
   allImpacts:
   - person: 0
-    joyGain: 1
+    joyGain: 2
   - person: 3
     joyGain: 0
   - person: 2
     joyGain: 0
   - person: 1
-    joyGain: 1
+    joyGain: -1
