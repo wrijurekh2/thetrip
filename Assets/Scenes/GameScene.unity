@@ -822,7 +822,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.659
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1218,7 +1218,7 @@ PrefabInstance:
     - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
       propertyPath: newDaySound
       value: 
-      objectReference: {fileID: 8300000, guid: adfd47ab8525abd4e8bc679643ce32e5, type: 3}
+      objectReference: {fileID: 8300000, guid: 702f501a1aa4a6345a516cf4540e5a50, type: 3}
     - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
       propertyPath: audioManager
       value: 
