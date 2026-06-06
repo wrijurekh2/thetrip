@@ -1,0 +1,29 @@
+#task-container {
+  padding: 16px;
+  background-color: rgb(253, 248, 240);
+}
+
+.task-row {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(224, 213, 192);
+  padding-bottom: 6px;
+}
+
+.task-check {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.task-label {
+  font-size: 14px;
+  color: rgb(61, 43, 31);
+  flex-grow: 1;
+}
+
+.task-label.done {
+  color: rgb(160, 120, 80);
+}
