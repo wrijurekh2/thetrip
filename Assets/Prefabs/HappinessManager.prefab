@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  exampleDay: {fileID: 11400000, guid: 5ecce258de4df80418a9e6b52337ab84, type: 2}
+  startDayJoyReductionPerPerson: 1.4
 --- !u!114 &8863030686739206237
 MonoBehaviour:
   m_ObjectHideFlags: 0
