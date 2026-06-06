@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Decision
   <totalAllowedSelections>k__BackingField: 3
   <expectedNetHappinessAtEndOfDay>k__BackingField: 3
+  <backgroundImage>k__BackingField: {fileID: 0}
+  <location>k__BackingField: 
   <dayDisplayTitle>k__BackingField: Day 4
   <activityOptions>k__BackingField:
   - {fileID: 11400000, guid: b30186bace5d09753bffac0a31b1faf1, type: 2}
@@ -22,3 +24,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f2ad350a571ae8571a6d7bdd8f0b1038, type: 2}
   - {fileID: 11400000, guid: f7e7680a6922bda0ba7368e66b36b0b1, type: 2}
   - {fileID: 11400000, guid: 272adb1007fa62c72999fec6fda3d85b, type: 2}
+  <backgroundMusic>k__BackingField: {fileID: 8300000, guid: 6df27159e2da2f24eac0443c1c930172, type: 3}
