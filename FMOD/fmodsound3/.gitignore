@@ -1,0 +1,5 @@
+# FMOD Cached files
+.cache/
+.user/
+.unsaved/
+Build/

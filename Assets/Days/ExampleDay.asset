@@ -14,14 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Decision
   <totalAllowedSelections>k__BackingField: 3
   <expectedNetHappinessAtEndOfDay>k__BackingField: 3
+  <dayDisplayTitle>k__BackingField: 
   <activityOptions>k__BackingField:
-  - writtenDescription: 
-    allImpacts:
-    - person: 0
-      joyGain: 1
-    - person: 1
-      joyGain: 1
-  - writtenDescription: 
-    allImpacts:
-    - person: 1
-      joyGain: -2
+  - {fileID: 11400000, guid: 2f87b7566b80c46419fd81321ab9da46, type: 2}
+  - {fileID: 11400000, guid: 2f87b7566b80c46419fd81321ab9da46, type: 2}
