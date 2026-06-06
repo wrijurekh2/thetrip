@@ -7,8 +7,6 @@ public class HappinessManager : MonoBehaviour
     [SerializeField]
     private PersonGraphic[] allPeople;
     public List<PersonData> people { get; private set; } = new();
-    [SerializeField]
-    private Day exampleDay;
 
     public class PersonData
     {
@@ -45,13 +43,9 @@ public class HappinessManager : MonoBehaviour
         
     }
 
-    private void Start()
-    {
-        FindAnyObjectByType<ChoiceListController>().LoadDay(exampleDay);
-    }
-
     public void StartDay(Day day)
     {
+        FindAnyObjectByType<ChoiceListController>().LoadDay(day);
         // Each selection is expected to increase net happiness by 1
         // You can use this to calculate how much happiness the day should start with to achieve the target difficulty
         float desiredNetHappiness = day.expectedNetHappinessAtEndOfDay - day.totalAllowedSelections;
