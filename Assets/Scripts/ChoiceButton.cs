@@ -7,14 +7,23 @@ public class ChoiceButton : MonoBehaviour
     [HideInInspector] public Activity activity;
     [HideInInspector] public ChoiceListController controller;
 
-    private TextMeshProUGUI label;
+    private TextMeshProUGUI _label;
+    private TextMeshProUGUI label
+    {
+        get
+        {
+            if (_label == null)
+                _label = GetComponentInChildren<TextMeshProUGUI>();
+            return _label;
+        }
+    }
     private SpriteRenderer spriteRenderer;
     private bool isSelected = false;
     private bool isDisabled = false;
 
     void Awake()
     {
-        label = GetComponentInChildren<TextMeshProUGUI>();
+        //label = GetComponentInChildren<TextMeshProUGUI>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
