@@ -11,6 +11,8 @@ public class GameStateMachine : MonoBehaviour
     private HappinessManager happinessManager;
     [SerializeField]
     private float startDayDelay;
+    [SerializeField]
+    private SpriteRenderer backgroundImage;
     public GameState currentState { get; private set; } = GameState.StartDay;
     private int currentDayIndex = 0;
     private ScoringSystem scoringSystem;
@@ -69,6 +71,7 @@ public class GameStateMachine : MonoBehaviour
     {
         currentDayIndex++;
         currentState = GameState.StartDay;
+        this.backgroundImage.sprite = currentDay.backgroundImage;
         happinessManager.StartDay(currentDay);
         StartCoroutine(StartDayRoutine());
     }
