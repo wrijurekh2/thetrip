@@ -282,10 +282,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.22466756
-    y: 0.20008893
-    width: 0.5502063
-    height: 0.6002668
+    x: 0.89554954
+    y: 0.23574144
+    width: 0.87193465
+    height: 1.026616
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -745,6 +745,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  clickSound: {fileID: 0}
 --- !u!61 &1966320548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1215,6 +1216,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
+      propertyPath: newDaySound
+      value: 
+      objectReference: {fileID: 8300000, guid: adfd47ab8525abd4e8bc679643ce32e5, type: 3}
+    - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 793070354}
+    - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
       propertyPath: _audioManager
       value: 
       objectReference: {fileID: 793070354}
@@ -1446,6 +1455,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  clickSound: {fileID: 0}
 --- !u!61 &7446923977918931971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1672,6 +1682,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  clickSound: {fileID: 0}
 --- !u!61 &8355736171008229606
 BoxCollider2D:
   m_ObjectHideFlags: 0

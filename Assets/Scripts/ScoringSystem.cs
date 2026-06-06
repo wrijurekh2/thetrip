@@ -5,6 +5,11 @@ public class ScoringSystem : MonoBehaviour
 {
     [SerializeField] private HappinessManager happinessManager;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     public int totalScore { get; private set; } = 0;
     public string CalculateScoreForDay()
     {
