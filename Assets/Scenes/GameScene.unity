@@ -700,6 +700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScorePage
       objectReference: {fileID: 0}
+    - target: {fileID: 8830791622918939715, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -799,7 +803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5997026752407127053, guid: 3bec28e257326e24ea82e5b28f2274e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5997026752407127053, guid: 3bec28e257326e24ea82e5b28f2274e6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -933,7 +937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3789857501546973753, guid: 6b8098dc64c3fba42884be91cb5668e9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 3789857501546973753, guid: 6b8098dc64c3fba42884be91cb5668e9, type: 3}
       propertyPath: m_LocalPosition.z
