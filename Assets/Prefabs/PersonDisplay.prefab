@@ -112,3 +112,5 @@ MonoBehaviour:
   innerClampHappiness: 3
   outerClampHappiness: 4
   offsetDirection: {x: 1, y: -1}
+  wobbleIntensity: 10
+  wobbleSpeed: 5

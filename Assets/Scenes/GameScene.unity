@@ -789,6 +789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChoicesPage
       objectReference: {fileID: 0}
+    - target: {fileID: 2443030975300456537, guid: 3bec28e257326e24ea82e5b28f2274e6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5997026752407127053, guid: 3bec28e257326e24ea82e5b28f2274e6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

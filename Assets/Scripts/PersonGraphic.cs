@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class PersonGraphic : MonoBehaviour
@@ -19,9 +20,16 @@ public class PersonGraphic : MonoBehaviour
     private float outerClampHappiness;
     [SerializeField]
     private Vector2 offsetDirection;
+    [SerializeField]
+    private float wobbleIntensity;
+    [SerializeField]
+    private float wobbleSpeed;
 
+    private float currentHappiness = 1;
+    private float wobblePhase;
     public void UpdateHappiness(float happiness, bool instantMove = false)
     {
+        currentHappiness = happiness;
         // Stop previous moves to avoid them clashing
         StopAllCoroutines();
         // Convert new happiness to a radius value
@@ -61,5 +69,18 @@ public class PersonGraphic : MonoBehaviour
             stage += Time.deltaTime / animationTime;
         }
         transform.localPosition = targetPosition;
+    }
+
+    private void Update()
+    {
+        if (currentHappiness > -0.01f)
+        {
+            transform.rotation = Quaternion.identity;
+        }
+        else
+        {
+            wobblePhase += Time.deltaTime * wobbleSpeed;
+            transform.rotation = Quaternion.Euler(0, 0, Mathf.Sin(wobblePhase) * wobbleIntensity);
+        }
     }
 }
