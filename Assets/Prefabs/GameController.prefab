@@ -46,8 +46,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameStateMachine
   allDays:
-  - {fileID: 11400000, guid: 5ecce258de4df80418a9e6b52337ab84, type: 2}
-  - {fileID: 11400000, guid: 5ecce258de4df80418a9e6b52337ab84, type: 2}
+  - {fileID: 11400000, guid: 26c9bbdb2dccdf159b577370f6f981ef, type: 2}
+  - {fileID: 11400000, guid: e43cfd640c8d30b4a89d0088d6a83f89, type: 2}
+  - {fileID: 11400000, guid: fa3810ced7b6699b98cf97f18c1f7be4, type: 2}
+  - {fileID: 11400000, guid: bef7705414046579c96157a8b7860da9, type: 2}
+  - {fileID: 11400000, guid: 00f527451870ca1cea9c81858c010329, type: 2}
   notebookManager: {fileID: 0}
   happinessManager: {fileID: 0}
   startDayDelay: 2
