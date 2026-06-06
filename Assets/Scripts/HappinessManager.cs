@@ -69,7 +69,7 @@ public class HappinessManager : MonoBehaviour
     {
         foreach (var person in people)
         {
-            if (person.isOutsideCircle)
+            if (!person.isOutsideCircle)
             {
                 person.daysOutsideCircle = 0;
             }

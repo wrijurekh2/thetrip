@@ -16,4 +16,6 @@ public class Day : ScriptableObject
     public string dayDisplayTitle { get; private set; }
     [field: SerializeField]
     public Activity[] activityOptions { get; private set; }
+	[field: SerializeField]
+	public AudioClip backgroundMusic { get; private set; }
 }
