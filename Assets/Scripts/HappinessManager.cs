@@ -6,7 +6,10 @@ public class HappinessManager : MonoBehaviour
 {
     [SerializeField]
     private PersonGraphic[] allPeople;
+    [SerializeField]
+    private float startDayJoyReductionPerPerson;
     public List<PersonData> people { get; private set; } = new();
+    private Day currentDay;
 
     public class PersonData
     {
@@ -43,12 +46,18 @@ public class HappinessManager : MonoBehaviour
         
     }
 
+    private void Start()
+    {
+        UpdatePeople();
+    }
+
     public void StartDay(Day day)
     {
+        currentDay = day;
         FindAnyObjectByType<ChoiceListController>().LoadDay(day);
         // Each selection is expected to increase net happiness by 1
         // You can use this to calculate how much happiness the day should start with to achieve the target difficulty
-        float desiredNetHappiness = day.expectedNetHappinessAtEndOfDay - day.totalAllowedSelections;
+        float desiredNetHappiness = day.expectedNetHappinessAtEndOfDay - day.totalAllowedSelections - (startDayJoyReductionPerPerson * people.Count);
 
         float currentNetHappiness = 0;
         foreach (var person in people)
@@ -63,6 +72,7 @@ public class HappinessManager : MonoBehaviour
         {
             person.joy += adjustmentPerPerson;
         }
+        UpdatePeople();
     }
 
     public void EndDay()
@@ -85,7 +95,13 @@ public class HappinessManager : MonoBehaviour
         foreach (var impact in activity.allImpacts)
         {
             GetPersonData(impact.person).joy += impact.joyGain;
+            // Add adjustment to make them happier throughout the day
+            GetPersonData(impact.person).joy += (startDayJoyReductionPerPerson / currentDay.totalAllowedSelections);
         }
+        UpdatePeople();
+    }
+    private void UpdatePeople()
+    {
         foreach (var person in people)
         {
             person.graphic.UpdateHappiness(person.joy);

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameStateMachine : MonoBehaviour
 {
@@ -63,6 +64,11 @@ public class GameStateMachine : MonoBehaviour
 
     public void ScoringComplete()
     {
+        if (this.currentDayIndex + 1 == this.allDays.Length)
+        {
+            GameEnd();
+            return;
+        }
         if (currentState != GameState.Decisions)
         {
             Debug.LogError("Invalid transition from Scoring");
@@ -76,6 +82,7 @@ public class GameStateMachine : MonoBehaviour
         currentDayIndex++;
         currentState = GameState.StartDay;
         this.backgroundImage.sprite = currentDay.backgroundImage;
+        this._audioManager.PlayBackgroundMusic(currentDay.backgroundMusic);
         happinessManager.StartDay(currentDay);
         if (audioManager != null && newDaySound != null)
             audioManager.PlaySFX(newDaySound);
@@ -91,6 +98,12 @@ public class GameStateMachine : MonoBehaviour
         notebookManager.MoveOnScreen();
         while (notebookManager.isBusy) yield return null;
         StartDayComplete();
+    }
+
+    private void GameEnd()
+    {
+        SceneManager.LoadScene(2);
+        return;
     }
 }
 

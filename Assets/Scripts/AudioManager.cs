@@ -16,7 +16,13 @@ public class AudioManager : MonoBehaviour
 
     public void Start()
     {
-        musicSource.clip = background;
+        // musicSource.clip = background;
+        // musicSource.Play();
+    }
+
+    public void PlayBackgroundMusic(AudioClip clip)
+    {
+        musicSource.clip = clip;
         musicSource.Play();
     }
 

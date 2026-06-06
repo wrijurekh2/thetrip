@@ -250,6 +250,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 573b2ee35d79271438383164b1499bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Button2D
+  onClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3549574808894692885
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,12 +334,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5402412272178277761, guid: 4114d57cdf209234ca9756405e5df3a6, type: 3}
+  m_Sprite: {fileID: 1010845125, guid: 24b604e7b3f742845a196e7927e75571, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.5, y: 0.84375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
