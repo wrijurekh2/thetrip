@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57dd2c14ad66f2044b804f74d6863672, type: 3}
-  m_Name: Day 3
+  m_Name: Day 5
   m_EditorClassIdentifier: Assembly-CSharp::Decision
   <totalAllowedSelections>k__BackingField: 3
   <expectedNetHappinessAtEndOfDay>k__BackingField: 3
-  <dayDisplayTitle>k__BackingField: Day 3
+  <dayDisplayTitle>k__BackingField: Day 5
   <activityOptions>k__BackingField:
-  - {fileID: 11400000, guid: a60e83a31362fff808adb8762b07a7b3, type: 2}
-  - {fileID: 11400000, guid: fa90e9cc72ef7b4de8801e8b8ab373e6, type: 2}
-  - {fileID: 11400000, guid: e4025884b7d339eaca103deb9d9509bc, type: 2}
-  - {fileID: 11400000, guid: 9188233e6379b304fb2f2c8b70254302, type: 2}
-  - {fileID: 11400000, guid: 2562638c01472a952bd6be6dee7a3a26, type: 2}
-  - {fileID: 11400000, guid: 4d31c437c6e1525baa4e55adde26f600, type: 2}
+  - {fileID: 11400000, guid: 2b5acfbee55fb949b9e90cfafd250a3d, type: 2}
+  - {fileID: 11400000, guid: 16653262224dded9b84231f1a58e0174, type: 2}
+  - {fileID: 11400000, guid: ce3b74ccff2f6e679a7988cbfd9723b9, type: 2}
+  - {fileID: 11400000, guid: 72f268fe2e7575397982d33c5dccf089, type: 2}
+  - {fileID: 11400000, guid: 4b2c4ba654ac5591cae069df88c6332b, type: 2}
+  - {fileID: 11400000, guid: da1e7949b082fe78e81b6513feca6d91, type: 2}
