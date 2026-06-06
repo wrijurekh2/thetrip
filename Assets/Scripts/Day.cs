@@ -17,5 +17,5 @@ public class Day : ScriptableObject
     [field: SerializeField]
     public Activity[] activityOptions { get; private set; }
 	[field: SerializeField]
-	private AudioClip backgroundMusic { get; private set; }
+	public AudioClip backgroundMusic { get; private set; }
 }
