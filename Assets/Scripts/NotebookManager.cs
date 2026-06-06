@@ -65,14 +65,7 @@ public class NotebookManager : MonoBehaviour
     public void SwitchToInfoScreen()
     {
         decisionPage.SetActive(false);
-        infoPage.SetActive(true);
-        scorePage.SetActive(false);
-    }
-
-    public void SwitchToDecisionScreen()
-    {
-        decisionPage.SetActive(true);
         infoPage.SetActive(false);
-        scorePage.SetActive(false);
+
     }
 }
