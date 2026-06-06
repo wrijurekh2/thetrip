@@ -167,6 +167,10 @@ MonoBehaviour:
   animationDuration: 1
   onScreenPosition: {x: 0, y: 0}
   offScreenPosition: {x: 0, y: 8}
+  scorePage: {fileID: 0}
+  decisionPage: {fileID: 0}
+  infoPage: {fileID: 0}
+  scoreCardTextBox: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,10 +270,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.22727272
-    y: 0.14285713
-    width: 0.5454545
-    height: 0.7142857
+    x: 0
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -681,6 +685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1299415891}
   - component: {fileID: 1299415892}
+  - component: {fileID: 1299415893}
   m_Layer: 0
   m_Name: HappinessManager
   m_TagString: Untagged
@@ -721,6 +726,53 @@ MonoBehaviour:
   - {fileID: 865561599}
   - {fileID: 652077488}
   exampleDay: {fileID: 11400000, guid: 5ecce258de4df80418a9e6b52337ab84, type: 2}
+--- !u!114 &1299415893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299415890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4aef409cc1b5154c8022afb09ee07ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceListController
+  happinessManager: {fileID: 1299415892}
+  choiceButtonPrefab: {fileID: 1597970047269356309, guid: 7462fb00646e3ba4fb455881d9d87400, type: 3}
+  choicesParent: {fileID: 1396586417}
+  spacingY: 0.6
+--- !u!1 &1396586416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1396586417}
+  m_Layer: 0
+  m_Name: ChoicesParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1396586417
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396586416}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3, y: 2, z: 0}
+  m_LocalScale: {x: 1.0619869, y: 1.0071, z: 1.0071}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1446646709}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446646707
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,6 +867,7 @@ Transform:
   - {fileID: 1902149407}
   - {fileID: 865561598}
   - {fileID: 652077487}
+  - {fileID: 1396586417}
   m_Father: {fileID: 364235482}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1902149406
@@ -935,6 +988,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5ecce258de4df80418a9e6b52337ab84, type: 2}
   - {fileID: 11400000, guid: 5ecce258de4df80418a9e6b52337ab84, type: 2}
   notebookManager: {fileID: 364235483}
+  happinessManager: {fileID: 0}
   startDayDelay: 2
 --- !u!4 &2010454975
 Transform:
