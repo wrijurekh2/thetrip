@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &279268995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 279268996}
+  m_Layer: 0
+  m_Name: InfoPage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &279268996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279268995}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 364235482}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &364235481
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,6 +181,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1446646709}
+  - {fileID: 279268996}
+  - {fileID: 1331327149}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &364235483
@@ -167,13 +200,9 @@ MonoBehaviour:
   animationDuration: 1
   onScreenPosition: {x: 0, y: 0}
   offScreenPosition: {x: 0, y: 8}
-  scorePage: {fileID: 0}
-  decisionPage: {fileID: 0}
-  infoPage: {fileID: 0}
-  scoreCardTextBox: {fileID: 0}
-  scorePage: {fileID: 0}
-  decisionPage: {fileID: 0}
-  infoPage: {fileID: 0}
+  scorePage: {fileID: 1331327148}
+  decisionPage: {fileID: 1446646707}
+  infoPage: {fileID: 279268995}
   scoreCardTextBox: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
@@ -746,6 +775,37 @@ MonoBehaviour:
   choiceButtonPrefab: {fileID: 1597970047269356309, guid: 7462fb00646e3ba4fb455881d9d87400, type: 3}
   choicesParent: {fileID: 1396586417}
   spacingY: 0.6
+--- !u!1 &1331327148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1331327149}
+  m_Layer: 0
+  m_Name: ScorePage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1331327149
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331327148}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 364235482}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1396586416
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +932,7 @@ Transform:
   - {fileID: 865561598}
   - {fileID: 652077487}
   - {fileID: 1396586417}
+  - {fileID: 1508723138}
   m_Father: {fileID: 364235482}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1508723136
@@ -963,7 +1024,7 @@ Transform:
   m_LocalScale: {x: 1.27, y: 0.95, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1953363355}
+  m_Father: {fileID: 1446646709}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1902149406
 PrefabInstance:
@@ -1050,38 +1111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1910acf45ef72b4fbe99cdaf175a7fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PersonGraphic
---- !u!1 &1953363354
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1953363355}
-  m_Layer: 0
-  m_Name: Buttons
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1953363355
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1953363354}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1508723138}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2010454973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,8 +1144,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5ecce258de4df80418a9e6b52337ab84, type: 2}
   - {fileID: 11400000, guid: 5ecce258de4df80418a9e6b52337ab84, type: 2}
   notebookManager: {fileID: 364235483}
-  happinessManager: {fileID: 0}
-  happinessManager: {fileID: 0}
+  happinessManager: {fileID: 1299415892}
   startDayDelay: 2
 --- !u!4 &2010454975
 Transform:
@@ -1308,4 +1336,3 @@ SceneRoots:
   - {fileID: 2010454975}
   - {fileID: 793070351}
   - {fileID: 2113776122}
-  - {fileID: 1953363355}
