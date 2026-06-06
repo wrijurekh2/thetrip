@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameStateMachine : MonoBehaviour
 {
@@ -94,6 +95,7 @@ public class GameStateMachine : MonoBehaviour
 
     private void GameEnd()
     {
+        SceneManager.LoadScene(2);
         return;
     }
 }
