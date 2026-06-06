@@ -8,10 +8,18 @@ public class GameStateMachine : MonoBehaviour
     [SerializeField]
     private NotebookManager notebookManager;
     [SerializeField]
+    private HappinessManager happinessManager;
+    [SerializeField]
     private float startDayDelay;
     public GameState currentState { get; private set; } = GameState.StartDay;
     private int currentDayIndex = 0;
+    private ScoringSystem scoringSystem;
     public Day currentDay { get => allDays[currentDayIndex]; }
+
+    private void Awake()
+    {
+        scoringSystem = GetComponent<ScoringSystem>();
+    }
 
     private void Start()
     {
@@ -33,6 +41,9 @@ public class GameStateMachine : MonoBehaviour
             Debug.LogError("Invalid transition from Decisions");
         }
         currentState = GameState.Scoring;
+        happinessManager.EndDay();
+        var scoreCard = scoringSystem.CalculateScoreForDay();
+        
     }
 
     public void ScoringComplete()
@@ -49,6 +60,7 @@ public class GameStateMachine : MonoBehaviour
     {
         currentDayIndex++;
         currentState = GameState.StartDay;
+        happinessManager.StartDay(currentDay);
         StartCoroutine(StartDayRoutine());
     }
 
