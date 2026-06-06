@@ -282,10 +282,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.041666668
-    y: 0.097222224
-    width: 0.25
-    height: 0.25
+    x: 0.28156224
+    y: 0.243346
+    width: 0.43596733
+    height: 0.513308
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -505,6 +505,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1910acf45ef72b4fbe99cdaf175a7fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PersonGraphic
+--- !u!1001 &1024023867
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5107014629010880465, guid: 18652844a3129e0519ad9933b372b300, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107014629010880465, guid: 18652844a3129e0519ad9933b372b300, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107014629010880465, guid: 18652844a3129e0519ad9933b372b300, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107014629010880465, guid: 18652844a3129e0519ad9933b372b300, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107014629010880465, guid: 18652844a3129e0519ad9933b372b300, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107014629010880465, guid: 18652844a3129e0519ad9933b372b300, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107014629010880465, guid: 18652844a3129e0519ad9933b372b300, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107014629010880465, guid: 18652844a3129e0519ad9933b372b300, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107014629010880465, guid: 18652844a3129e0519ad9933b372b300, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107014629010880465, guid: 18652844a3129e0519ad9933b372b300, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7579855161658339521, guid: 18652844a3129e0519ad9933b372b300, type: 3}
+      propertyPath: m_Name
+      value: Background
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18652844a3129e0519ad9933b372b300, type: 3}
+--- !u!212 &1028916775 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6433989371974022318, guid: 18652844a3129e0519ad9933b372b300, type: 3}
+  m_PrefabInstance: {fileID: 1024023867}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1252167536 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 338572933384391403, guid: b737a934a90950d4a8ab6705535c0cf9, type: 3}
@@ -1153,6 +1215,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
+      propertyPath: backgroundImage
+      value: 
+      objectReference: {fileID: 1028916775}
+    - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
       propertyPath: notebookManager
       value: 
       objectReference: {fileID: 364235483}
@@ -1651,3 +1717,4 @@ SceneRoots:
   - {fileID: 7440036275866331885}
   - {fileID: 793070351}
   - {fileID: 2113776122}
+  - {fileID: 1024023867}
