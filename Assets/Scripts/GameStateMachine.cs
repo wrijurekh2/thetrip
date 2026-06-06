@@ -26,6 +26,14 @@ public class GameStateMachine : MonoBehaviour
         StartNewDay();
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return) && currentState == GameState.Decisions)
+        {
+            DecisionsComplete();
+        }
+    }
+
     public void StartDayComplete()
     {
         if (currentState != GameState.StartDay)
