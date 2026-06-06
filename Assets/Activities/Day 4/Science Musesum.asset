@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a46d88970682f6e48b800ee54325af87, type: 3}
-  m_Name: Pyramids of Giza
+  m_Name: Science Musesum
   m_EditorClassIdentifier: Assembly-CSharp::Activity
-  writtenDescription: Get a tour bus to the Pyramids of Giza
-  writtenThought: 'Charlie loved the Pyramids, but Alice wasn''t a fan of the long
-    bus ride. '
+  writtenDescription: Got to a Science Musesum
+  writtenThought: Adnan loved geeking out
   allImpacts:
   - person: 0
-    joyGain: -2
+    joyGain: -1
   - person: 3
     joyGain: 0
   - person: 2
-    joyGain: 2
-  - person: 1
     joyGain: 1
+  - person: 1
+    joyGain: 2

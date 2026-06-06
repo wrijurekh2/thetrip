@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57dd2c14ad66f2044b804f74d6863672, type: 3}
+  m_Name: Day 4
+  m_EditorClassIdentifier: Assembly-CSharp::Decision
+  <totalAllowedSelections>k__BackingField: 3
+  <expectedNetHappinessAtEndOfDay>k__BackingField: 3
+  <dayDisplayTitle>k__BackingField: Day 4
+  <activityOptions>k__BackingField:
+  - {fileID: 11400000, guid: 4c1c8f57063261f9eab26aac995536bb, type: 2}
+  - {fileID: 11400000, guid: efddf16cb7cdc4c0fa242dea1c25a5eb, type: 2}
+  - {fileID: 11400000, guid: dec5a4ea3d6835bf985b25d4168aff39, type: 2}
+  - {fileID: 11400000, guid: 94b117cfdea261dc88957d5bdd58169f, type: 2}
+  - {fileID: 11400000, guid: ffca80312b04f131f833e540c531ed92, type: 2}
+  - {fileID: 11400000, guid: 29b5098c392351a2d8eb3c296e51b1ef, type: 2}
