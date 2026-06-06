@@ -82,7 +82,7 @@ public class GameStateMachine : MonoBehaviour
         currentDayIndex++;
         currentState = GameState.StartDay;
         this.backgroundImage.sprite = currentDay.backgroundImage;
-        this._audioManager.PlayBackgroundMusic(currentDay.backgroundMusic);
+        this.audioManager.PlayBackgroundMusic(currentDay.backgroundMusic);
         happinessManager.StartDay(currentDay);
         if (audioManager != null && newDaySound != null)
             audioManager.PlaySFX(newDaySound);
