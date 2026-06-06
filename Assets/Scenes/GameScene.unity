@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec03c52dbde9d59418e4cc2de4b87a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NotebookManager
-  animationDuration: 1
+  animationDuration: 0.7
   onScreenPosition: {x: 0, y: 0}
   offScreenPosition: {x: 0, y: 8}
   scorePage: {fileID: 1331327148}
@@ -1214,6 +1214,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
+      propertyPath: startDayDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1962462103048361976, guid: c2b5a9e0c45176649835724ced84cc72, type: 3}
       propertyPath: backgroundImage
       value: 
