@@ -43,6 +43,7 @@ public class GameStateMachine : MonoBehaviour
         currentState = GameState.Scoring;
         happinessManager.EndDay();
         var scoreCard = scoringSystem.CalculateScoreForDay();
+        notebookManager.SwitchToScoreScreen(scoreCard);
         
     }
 
